@@ -31,7 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Test and coverage
-        run: npm test --code-coverage
+        run: npm test 
         env:
           GITHUB_TOKEN: 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
           SONAR_TOKEN: 7716d7ce030475026a5f930c60283af1699a8f3b
