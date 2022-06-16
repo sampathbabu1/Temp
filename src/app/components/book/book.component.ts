@@ -22,7 +22,7 @@ export class BookComponent implements OnInit {
     this.percent[id]=value;
   }
 
-  public percent:number[]|null[]=[50,20,30,60,70];
+  public percent:number[]|null[]=[50,20,30,60];
   public listOfBooks: Books[] = [];
   constructor(private _currentReading: CurrentlyReadingService) {}
   private readingBooks: number[] = [];
