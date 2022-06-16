@@ -1,0 +1,10 @@
+div{
+    border: 1px solid black;
+    margin: 1rem;
+}
+img{
+    background-color: aqua;
+}
+mat-grid-tile{
+    border: 1px solid black;
+}

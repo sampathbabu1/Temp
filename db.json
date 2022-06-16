@@ -1,9 +1,9 @@
 {
-  "posts": [
+  "books": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Animal Kingdom",
+      "author": "Rowling"
     }
   ],
   "comments": [

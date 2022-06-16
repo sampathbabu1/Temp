@@ -1,22 +1,40 @@
 {
-  "tasks": [
+  "books": [
     {
       "id": 1,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": true
+      "title": "Animal Kingdom",
+      "author": "JK Rowling",
+      "path": "assets/AnimalKingdom.jpeg"
     },
     {
       "id": 2,
-      "text": "Meeting at School",
-      "day": "May 6th at 1:30pm",
-      "reminder": true
+      "title": "Crimes Grindelwald",
+      "author": "JK Rowling",
+      "path": "assets/CrimesGrindelwald.jpeg"
     },
     {
       "id": 3,
-      "text": "Food Shopping",
-      "day": "May 7th at 12:30pm",
-      "reminder": true
+      "title": "Fantastic Beasts",
+      "author": "JK Rowling",
+      "path": "assets/fantasticBeasts-JKRowling.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Humans of New York",
+      "author": "JK Rowling",
+      "path": "assets/HumansOfNewYork.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Maus",
+      "author": "JK Rowling",
+      "path": "assets/Maus.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Ways of Seeing John Berger",
+      "author": "JK Rowling",
+      "path": "assets/WaysOfSeeingJohnBerger.jpeg"
     }
   ]
 }

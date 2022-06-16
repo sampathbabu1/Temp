@@ -1,0 +1,21 @@
+<mat-grid-list cols="4">
+  <mat-grid-tile *ngFor="let i of listOfBooks">
+    <div><img [src]="i.path" /></div>
+    <br>
+    <h4>Title: {{ i.title }}</h4>
+    <br>
+    <h4>Author: {{ i.author }}</h4>
+    <h4>Progress: {{ percent[i.id-1] || 0 }}%</h4>
+    <mat-slider
+      min="1"
+      max="100"
+      disabled
+      (change)="changeSlider(i.id - 1, $event.value)"
+      value="{{ percent[i.id - 1] || 0 }}"
+    ></mat-slider>
+    <app-button
+      text="{{ buttonText[i.id - 1] }}"
+      (btnClick)="readbook(i.id)"
+    ></app-button>
+  </mat-grid-tile>
+</mat-grid-list>

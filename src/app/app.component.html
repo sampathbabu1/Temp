@@ -1,5 +1,9 @@
 <body>
-<app-button text="Add" color="red"></app-button>
-<app-tasks></app-tasks>
-<app-task-item></app-task-item>
+<mat-slider value="50" min="1" step="1" max="100" (change)="temp($event)"></mat-slider>
+<p>{{percent}} %</p>
+<button id="basic" type="button" mat-raised-button>Basic</button>
+<app-dialog></app-dialog>
+<app-book></app-book>
+<app-currently-reading></app-currently-reading>
+<router-outlet></router-outlet>
 </body>
