@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CurrentlyReadingComponent } from './currently-reading.component';
@@ -8,7 +9,8 @@ describe('CurrentlyReadingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CurrentlyReadingComponent ]
+      declarations: [ CurrentlyReadingComponent ],
+      imports:[HttpClientModule]
     })
     .compileComponents();
   });

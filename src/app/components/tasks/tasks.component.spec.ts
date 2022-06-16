@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TasksComponent } from './tasks.component';
@@ -8,18 +9,21 @@ describe('TasksComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TasksComponent ]
+      declarations: [ TasksComponent ],
+      imports:[HttpClientModule]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TasksComponent);
-    component = fixture.componentInstance;
+    component = fixture.componentInstance
     fixture.detectChanges();
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    console.log(component)
+    expect(component).toBeTruthy()
+    // expect(component).not.toBeNull();
   });
 });
