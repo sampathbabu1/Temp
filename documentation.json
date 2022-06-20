@@ -1752,6 +1752,16 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/book/book.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({\n    \n})"
+            },
+            {
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1909,12 +1919,44 @@
                 "deprecationMessage": "",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/book/book.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<BookComponent>",
+                "defaultValue": "() => ({\n  component: BookComponent,\n})"
             }
         ],
         "functions": [],
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/app/components/book/book.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/book/book.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({\n    \n})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/book/book.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<BookComponent>",
+                    "defaultValue": "() => ({\n  component: BookComponent,\n})"
+                }
+            ],
             "src/test.ts": [
                 {
                     "name": "context",
@@ -2132,6 +2174,26 @@
                 "name": "BookComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/book/book.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/book/book.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
