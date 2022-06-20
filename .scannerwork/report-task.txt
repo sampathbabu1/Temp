@@ -1,0 +1,7 @@
+organization=sampathbabu1
+projectKey=sampathbabu1_Temp
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.29762
+dashboardUrl=https://sonarcloud.io/dashboard?id=sampathbabu1_Temp
+ceTaskId=AYF_h2nQYc1VxCR5_JyM
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYF_h2nQYc1VxCR5_JyM

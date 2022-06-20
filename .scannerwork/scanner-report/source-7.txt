@@ -1,0 +1,40 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Animal Kingdom",
+      "author": "JK Rowling",
+      "path": "assets/AnimalKingdom.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Crimes Grindelwald",
+      "author": "JK Rowling",
+      "path": "assets/CrimesGrindelwald.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Fantastic Beasts",
+      "author": "JK Rowling",
+      "path": "assets/fantasticBeasts-JKRowling.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Humans of New York",
+      "author": "JK Rowling",
+      "path": "assets/HumansOfNewYork.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Maus",
+      "author": "JK Rowling",
+      "path": "assets/Maus.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Ways of Seeing John Berger",
+      "author": "JK Rowling",
+      "path": "assets/WaysOfSeeingJohnBerger.jpeg"
+    }
+  ]
+}

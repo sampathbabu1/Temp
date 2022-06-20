@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">45% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/20</span>
+                <span class='fraction'>15/20</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/5</span>
+                <span class='fraction'>4/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">42.1% </span>
+                <span class="strong">73.68% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/19</span>
+                <span class='fraction'>14/19</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -113,32 +113,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, OnInit } from '@angular/core';
@@ -151,13 +151,13 @@ import { CurrentlyReadingService } from 'src/app/services/currently-reading.serv
   styleUrls: ['./book.component.css'],
 })
 export class BookComponent implements OnInit {
-<span class="fstat-no" title="function not covered" >  readbook(</span>id: number) {
-<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if(this.buttonText[id-1]=="Read Book"){</span>
+  readbook(id: number) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(this.buttonText[id-1]=="Read Book"){
 <span class="cstat-no" title="statement not covered" >      this.buttonText[id-1]="Continue Reading"</span>
 <span class="cstat-no" title="statement not covered" >      return</span>
     }
-<span class="cstat-no" title="statement not covered" >    this.readingBooks.push(id);</span>
-<span class="cstat-no" title="statement not covered" >    this._currentReading.currentlyReading(id);</span>
+    this.readingBooks.push(id);
+    this._currentReading.currentlyReading(id);
   }
 <span class="fstat-no" title="function not covered" >  changeSlider(</span>id:number,value:number|null){
 <span class="cstat-no" title="statement not covered" >    console.log(id)</span>
@@ -172,10 +172,10 @@ export class BookComponent implements OnInit {
   public buttonText: string[] = [];
 &nbsp;
   ngOnInit(): void {
-    this._currentReading.sendBooks().subscribe(<span class="fstat-no" title="function not covered" >(v</span>alue) =&gt; {
-<span class="cstat-no" title="statement not covered" >      this.listOfBooks = value;</span>
-<span class="cstat-no" title="statement not covered" >      console.log(this.listOfBooks.length);</span>
-<span class="cstat-no" title="statement not covered" >      this.buttonText = Array(this.listOfBooks.length).fill('Read Book');</span>
+    this._currentReading.sendBooks().subscribe((value) =&gt; {
+      this.listOfBooks = value;
+      console.log(this.listOfBooks.length);
+      this.buttonText = Array(this.listOfBooks.length).fill('Read Book');
     });
     console.log(this.buttonText);
   }
@@ -187,7 +187,7 @@ export class BookComponent implements OnInit {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Thu Jun 16 2022 10:18:30 GMT+0530 (India Standard Time)
+                at Mon Jun 20 2022 10:44:29 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../prettify.js"></script>
         <script>
