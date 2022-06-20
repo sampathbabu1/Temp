@@ -28,8 +28,9 @@ module.exports = function (config) {
       dir: require('path').join(__dirname, './coverage/demo-angular'),
       subdir: '.',
       reporters: [
-        { type: 'html' },
-        { type: 'text-summary' }
+        { type: 'html' ,subdir:'html-report'},
+        // { type: 'text-summary' },
+        { type: 'lcov', subdir: 'lcov-report' }
       ]
     },
     reporters: ['progress', 'kjhtml'],
